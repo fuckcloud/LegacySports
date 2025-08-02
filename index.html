@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegacySports</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <nav id="sidebar">
+        <ul class="main-menu">
+            <li><a href="#">Home</a></li>
+            <li onclick="toggleSubmenu('futbol')">Fútbol
+                <ul id="submenu-futbol" class="submenu">
+                    <li><a href="#">World Cups</a></li>
+                    <li><a href="#">Champions League</a></li>
+                    <li><a href="#">Eurocopa</a></li>
+                    <li><a href="#">Copa América</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleSubmenu('tenis')">Tenis
+                <ul id="submenu-tenis" class="submenu">
+                    <li><a href="#">Wimbledon</a></li>
+                    <li><a href="#">Roland Garros</a></li>
+                    <li><a href="#">US Open</a></li>
+                    <li><a href="#">Australian Open</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleSubmenu('basket')">Básquet
+                <ul id="submenu-basket" class="submenu">
+                    <li><a href="#">NBA</a></li>
+                    <li><a href="#">Euroleague</a></li>
+                </ul>
+            </li>
+            <li onclick="toggleSubmenu('baseball')">Baseball
+                <ul id="submenu-baseball" class="submenu">
+                    <li><a href="#">MLB</a></li>
+                    <li><a href="#">World Series</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Welcome to LegacySports</h1>
+        <p>Your historical archive of legendary sports moments.</p>
+    </main>
+</body>
+</html>
